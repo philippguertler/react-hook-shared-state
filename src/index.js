@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export function createSharedState(state) {
+export default state => {
   const listeners = new Set();
 
   const user = () => {

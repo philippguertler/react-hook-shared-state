@@ -2,22 +2,41 @@
   "name": "react-hook-shared-state",
   "version": "0.0.1",
   "description": "A simple way to create shared state using the hook API from React.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-web-module",
+    "clean": "nwb clean-module",
+    "prepublishOnly": "npm run build",
+    "test": "nwb test",
+    "test:coverage": "nwb test --coverage",
+    "test:watch": "nwb test --server"
+  },
+  "peerDependencies": {
+    "react": "^16.7.0-alpha.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "npm-watch": "^0.6.0",
+    "nwb": "0.23.x",
+    "react": "^16.7.0-alpha.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/philippguertler/react-hook-shared-state.git"
   },
-  "keywords": ["react"],
+  "keywords": [
+    "react"
+  ],
   "author": "Philipp Gürtler",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/philippguertler/react-hook-shared-state/issues"
   },
-  "homepage": "https://github.com/philippguertler/react-hook-shared-state#readme",
-  "dependencies": {
-    "react": "^16.7.0-alpha.0"
-  },
-  "devDependencies": {
-    "typescript": "^3.1.3"
-  }
+  "homepage": "https://github.com/philippguertler/react-hook-shared-state#readme"
 }
