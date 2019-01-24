@@ -20,9 +20,9 @@
   "peerDependencies": {
     "react": "^16.7.0-alpha.0"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "npm-watch": "^0.6.0",
     "nwb": "0.23.x",
     "react": "^16.7.0-alpha.0"
   },
@@ -30,7 +30,9 @@
     "type": "git",
     "url": "git+https://github.com/philippguertler/react-hook-shared-state.git"
   },
-  "keywords": ["react"],
+  "keywords": [
+    "react"
+  ],
   "author": "Philipp Gürtler",
   "license": "MIT",
   "bugs": {
