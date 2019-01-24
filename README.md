@@ -9,7 +9,29 @@ yarn add react-hook-shared-state
 ```
 
 # Example
-TODO
+
+```js
+import createSharedState from 'react-hook-shared-state'
+
+const [useSharedState, setSharedState] = createSharedState('initial state')
+
+/*
+ * The state of every component will be assigned the same value.
+ */
+const MyComponent = () => {
+  const state = useSharedState()
+  return (
+    <div
+      onClick={() => setSharedState(state => state.replace('initial', 'new'))}
+    >
+      {state}
+    </div>
+  )
+}
+
+```
+
+
 
 # API
 
