@@ -1,6 +1,6 @@
 {
   "name": "react-hook-shared-state",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple way to create shared state using the hook API from React.",
   "main": "lib/index.js",
   "module": "es/index.js",
