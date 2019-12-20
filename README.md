@@ -1,3 +1,6 @@
+# ARCHIVED
+I recommend using the [Context API](https://reactjs.org/docs/context.html) instead to allow for better composability.
+
 # react-hook-shared-state
 A simple way to create shared state using the hook API from React.
 
